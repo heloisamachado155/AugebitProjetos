@@ -74,7 +74,6 @@ const EpiPaeScreen = ({ navigation, route }) => {
         <Icon name="search" size={20} color="#aaa" style={styles.searchIcon} />
       </View>
 
-      {/* Items Grid */}
       <FlatList
         data={filteredItems}
         renderItem={renderItem}
@@ -92,7 +91,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#000",
-    // marginTop: 50,
+    
   },
   searchContainer: {
     margin: 15,

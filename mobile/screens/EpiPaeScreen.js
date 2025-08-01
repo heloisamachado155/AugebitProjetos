@@ -74,7 +74,6 @@ const EpiPaeScreen = ({ navigation, route }) => {
         <Icon name="search" size={20} color="#aaa" style={styles.searchIcon} />
       </View>
 
-      {/* Items Grid */}
       <FlatList
         data={filteredItems}
         renderItem={renderItem}

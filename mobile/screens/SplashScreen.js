@@ -3,7 +3,7 @@ import { View, Image, StyleSheet } from 'react-native';
 
 const SplashScreen = ({ navigation }) => {
   useEffect(() => {
-    // Espera 2 segundos e vai para a tela de login
+    
     const timeout = setTimeout(() => {
       navigation.replace('Login');
     }, 2000);
@@ -14,7 +14,7 @@ const SplashScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <Image
-        source={require('../assets/logo.png')} // Substitua pelo caminho do seu logo
+        source={require('../assets/logo.png')} 
         style={styles.logo}
         resizeMode="contain"
       />
@@ -27,7 +27,7 @@ export default SplashScreen;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#000', // Fundo preto
+    backgroundColor: '#000', 
     alignItems: 'center',
     justifyContent: 'center',
   },

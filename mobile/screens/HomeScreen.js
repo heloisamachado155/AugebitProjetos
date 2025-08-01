@@ -46,7 +46,7 @@ const HomeScreen = ({ navigation }) => {
 
   useEffect(() => {
     axios
-      .get('http://192.168.0.10/api/get_mobiles.php') // Substitua pelo IP do seu PC
+      .get('http://192.168.0.10/api/get_mobiles.php') 
       .then((response) => {
         setData(response.data);
         setLoading(false);

@@ -10,7 +10,7 @@ export default function LoginScreen({ navigation }) {
     
   }); 
 
-  // Email válido para teste - você pode alterar aqui
+
   const validEmail = 'admin@empresa.com';
 
   const validateEmail = (email) => {
@@ -30,7 +30,7 @@ export default function LoginScreen({ navigation }) {
     }
 
     if (email === validEmail) {
-      // Navega para a página Home
+      
       navigation.navigate('Home');
     } else {
       Alert.alert('Erro', 'Email não encontrado. Verifique suas credenciais.');
